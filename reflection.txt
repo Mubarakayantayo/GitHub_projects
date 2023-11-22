@@ -1,0 +1,3 @@
+The most different part of the project is writing out the my malloc in several ways and watching is fail. I also found it hard to think of operations to check if the cunk of memory was used or full. Mentally it made sense but couldn't derive an equation for it
+It kind of does only that mine doesn't work like the real deal
+It is slightly better and i see the use of storing in multiples of a number like 8 or it's multiples.
