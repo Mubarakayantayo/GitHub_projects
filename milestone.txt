@@ -1,0 +1,19 @@
+In this programming assignment, I ran into several problems that was hard to solve.
+I commenced the project by having a conversation with someone that took a similar course before and had a similar project where he briefly explained what to do
+	"... I don’t really remember much. I just remember that the solution is figuring out a standard equation for each scenario: adding memory, removing memory, freeing memory, etc." 
+2) I watched the class videos over and over because i missed class deu to certain personal things then copied the begining provided for us in class.
+3) I decided to just start the whole project as a whole from the my_malloc function and implement whatever was needed for the function to do
+	i)since i knew the header is 4 bytes and the footer is 4, then the payload + padding mush be a multiple of 8
+	ii)didn't know how to loop through so i had to test out on a sofware online, different ways to loop through using different syntax
+	iii) I chose the sbrk(0) to get the address without modifying what is there and then updated til i fing a free block of mod 8= 0
+	iv) was stuck here and kept watching panopto and decided to try the first choice of using & bitwise operator and i had to look up the syntax for the and bitwise operator online and it said "int block_size = *header & ~1" which i stuck with even though i do not know what the ~ does
+	v) I learnt how to use or bitwise operator so i used it to change the last bit to 1 and keep other bits the same.
+	vi) was stuck on creating footer for almost a day and went back to my friend which helped me with creating the footer but we weren't sure if it was perfect since i has been almost a year since he learned c
+	vii) made more tweaks to have header and footer have the same value but footer at the location of header + the value of header +1 
+4) my_free function was created next and i tried to use the same logic of my_malloc but I just change the value to be anded with 1 if it exist
+	i) i tried to figure out coalescing immediately because the previous step was easy as it was provided from panopto.
+	ii) coalescing kept messing up so i decided to make progress edit on diffferent applications like docs, notepad, notes, text messaging, etc because i didn't want to alter my code too much and mess up all the progress. for this reason i didn't push a lot of it on github
+	ii) tried my best to implement what i think is coalescing and mentally ran it to see if it holds and after a day it seemed to make sense.
+	iii) after watching panopto i added the final and pushed all my progress to git
+5) print_ heap. I wasn't sure of how exactlu to start but i just decided to uses the same thing for my_malloc but print out the block rather than updating the value then i iterated through my pointer.
+	i) took a couple hours to do but was the easiest function to think of and create 
